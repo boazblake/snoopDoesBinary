@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-family: 'Indie Flower', cursive;
+}
+
+.alignChildren {
+    font-size: 0;
+}
+
+.alignChildren > * {
+    display: inline-block;
+    font-size: medium;
+    vertical-align: top;
+}
+
+
+.background{
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+	background-image: url(http://assets.rollingstone.com/assets/images/story/snoop-dogg-talks-holograms-2pac-and-chronic-in-web-chat-20130509/snoop-624-1368121236.jpg);
+	background-position: center;
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+
+.calc {
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+	background: radial-gradient(ellipse, rgba(149, 165, 166,0.8), rgba(149, 165, 166,0.2));
+	color:darkgreen;
+}
+
+.calc *{
+	font-size: 45px;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+.row {
+	display: block;
+	width: 100%;
+}
+
+.inputBox, .cBox{
+	box-shadow: ;
+	display: inline-block;
+	width: 20%;
+	height: 100px;
+	padding-top: 15px;
+	border-radius: 6px;
+	box-shadow: 0 8px 6px -6px black;
+
+
+}
+
+.inputBox:hover,
+.cBox:hover {
+	transform: scale(0.8, 0.8);
+	transition: 2s all cubic-bezier(0,.95,1,.57);
+}
+
+.result{
+	display: inline-block;
+	width: 60%;
+	height: 100px;
+	padding-top: 15px;
+	border-radius: 6px;
+	font-size: 70px;
+	text-shadow: 2px 2px whitesmoke;
+}
+
+#top{
+	background: radial-gradient(ellipse, rgba(149, 165, 166,0.3), rgba(149, 165, 166,0.2));
+}
