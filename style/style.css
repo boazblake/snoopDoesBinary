@@ -46,6 +46,10 @@ html {
 	width: 100%;
 }
 
+button{
+	
+}
+
 .inputBox, .cBox{
 	box-shadow: ;
 	display: inline-block;
@@ -54,8 +58,6 @@ html {
 	padding-top: 15px;
 	border-radius: 6px;
 	box-shadow: 0 8px 6px -6px black;
-
-
 }
 
 .inputBox:hover,
