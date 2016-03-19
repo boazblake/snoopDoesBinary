@@ -1,4 +1,3 @@
-console.log($)
 var calc = document.querySelector('body')
 var answer = document.querySelector('.result')
 var select = document.querySelectorAll('.inputBox')
@@ -7,7 +6,6 @@ var select = document.querySelectorAll('.inputBox')
 
 function handleSnoopCalc(clickEvent){
 		var inputNum = clickEvent.target.innerHTML
-		console.log(inputNum)
 
 	if(inputNum === "C") {
 	answer.innerHTML = ''
@@ -21,7 +19,6 @@ function handleSnoopCalc(clickEvent){
 		quest = answer.innerHTML
 		var result = eval(quest)
 
-		console.log(result)
 		answer.innerHTML = result + '~izzle ma nizzle' //make this random ordered
 	}												
 }
@@ -30,7 +27,6 @@ function handleSnoopCalc(clickEvent){
 
 function handleBinaryCalc(clickEvent){
 	var inputNum = clickEvent.target.innerHTML
-	console.log(inputNum)
 		if(inputNum === "C") {
 	answer.innerHTML = ''
 	}
@@ -47,17 +43,14 @@ function handleBinaryCalc(clickEvent){
 			newN = Math.floor(n)
 			// console.log(newN)
 			binDigit = newN % 2
-			console.log(newN)
 			if (binDigit === 0) {
 				binaryNumArray.push(binDigit)
 			}
 			else {binaryNumArray.push('1')
 			}
 			n =  n/2
-			console.log(binaryNumArray)
 		}
-			
-		answer.innerHTML = binaryNumArray.reverse()  + '~izzle ma nizzle' 
+		answer.innerHTML = binaryNumArray.reverse().toString()  + '~izzle ma nizzle' 
 	}
 }
 
