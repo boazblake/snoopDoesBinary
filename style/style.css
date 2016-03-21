@@ -22,7 +22,7 @@ html {
 	width:100%;
 	height:100%;
 	margin: 0 auto;
-	background-image: url(http://assets.rollingstone.com/assets/images/story/snoop-dogg-talks-holograms-2pac-and-chronic-in-web-chat-20130509/snoop-624-1368121236.jpg);
+	background-image: url(http://i2.irishmirror.ie/incoming/article4261597.ece/ALTERNATES/s615/Snoop-Dog-Main.jpg);
 	background-position: center;
 	background-size: 100%;
 	background-repeat:no-repeat;
@@ -88,10 +88,9 @@ html {
 }
 
 #canvas{
-	/* background:rgba(230, 126, 34,1); */
 	position: absolute;
 	transform: translateX(-50%);
-	/* opacity: 0.0; */
+	opacity: .2;
 	width: 100%;
 	height: 100px;
 	padding-top: 15px;

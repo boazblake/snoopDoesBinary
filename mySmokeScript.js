@@ -5,7 +5,7 @@ var particles = []
 var particleCount = 1
 
 // verlocity of the particle:
-var particleVerlocity = 1
+var maxVelocity = 1
 
 //frames per second to render
 var targetFPS = 60

@@ -2,13 +2,15 @@ var calc = document.querySelector('body')
 var answer = document.querySelector('.result')
 var select = document.querySelectorAll('.inputBox')
 
+
 function handleBinaryCalc(clickEvent) {
     console.log(clickEvent)
     var inputNum = clickEvent.target.innerHTML
     if (inputNum === "C") {
-    	snoopPuff()
         answer.innerHTML = ''
-    } else if (inputNum !== "=") {
+    } else if (clickEvent.target.className === "result") {
+    	alert('Hey-izzle')
+    }   else if (inputNum !== "=") {
         answer.innerHTML += inputNum
     } else if (inputNum === "=") {
         quest = answer.innerHTML
@@ -32,10 +34,6 @@ function handleBinaryCalc(clickEvent) {
 }
 
 calc.addEventListener('click', handleBinaryCalc)
-
-
-
-
 
 
     // answer.addEventListener
